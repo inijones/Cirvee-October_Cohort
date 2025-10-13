@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        background-color: #ccc;
+      }
+
+      .title {
+        font-size: 30px;
+        color: green;
+      }
+
+      #house {
+        width: 80%;
+        border-radius: 40px;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: Helvetica;
+        font-weight: lighter;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      .different {
+        color: black;
+      }
+
+      .form {
+        margin-top: 100px;
+
+        width: 80%;
+        background-color: white;
+
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+      }
+
+      .form label {
+        margin-bottom: 20px;
+        display: block;
+        font-weight: 200;
+        font-size: 20px;
+      }
+
+      .form input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+       
+        gap: 8px;
+        margin-bottom: 15px;
+      }
+
+      .remember-me input[type="checkbox"] {
+        cursor: pointer;
+      }
+
+      .remember-me label {
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .form a {
+        margin-top: 50px;
+        display: inline;
+        margin-bottom: 20px;
+      }
+
+      /* Button Styles */
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: darkblue;
+      }
+
+      .button img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="title">Sign Up</h1>
+    <p>PURTIY UI DASHBOARD</p>
+    <h1 class="title">The Elements for Today</h1>
+
+    <img id="house" src="house.jpeg" alt="My House" />
+
+    <h3>Join the fun club</h3>
+    <h3 class="different">Join the fun club</h3>
+    <h3 class="different">Join the fun club</h3>
+
+    <form class="form">
+      <label>First Name</label>
+
+      <input type="text" id="first-name" name="first-name" required />
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me" />
+        <label for="remember-me">Remember Me</label>
+      </div>
+
+      <a href="#">Forgotten your password?</a>
+
+      <button type="submit" class="button">
+        <span>Sign Up</span>
+      </button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 8px;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+      }
+
+      .google-btn {
+        background-color: white;
+        color: black;
+        border: 2px solid #ccc;
+      }
+
+      .google {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .google img {
+        height: 16px;
+        width: 16px;
+        vertical-align: middle;
+      }
+
+      .forgot {
+        margin-top: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login-container">
+      <h1>Sign In</h1>
+      <p>or <a href="#">create an account</a></p>
+
+      <form>
+        <input type="email" placeholder="Email" required />
+
+        <input type="password" placeholder="Password" required />
+
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+
+        <button type="submit">Sign In</button>
+
+        <div class="google">
+          <button type="submit" class="google-btn">
+            <img src="google_img.png" alt="Google Icon" />
+            Sign In With Google
+          </button>
+        </div>
+
+        <div class="forgot">
+          <a href="#">Forgotten your Password?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
