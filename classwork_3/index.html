@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+    <style>
+      body {
+        background-color: lightgreen;
+        font-family: Helvertica;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        width: 60%;
+        padding: 40px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        margin-bottom: 20px;
+        background-color: #f1f1f1;
+        border: none;
+        padding: 16px;
+      }
+
+      button {
+        background-color: #0ea25d;
+        border: none;
+        padding: 12px;
+        color: white;
+      }
+
+      p,
+      a {
+        font-size: 12px;
+        font-family: Helvetica;
+      }
+
+      .not-register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .not-register a {
+        color: #0ea25d;
+        margin-left: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <input type="text" placeholder="username" required />
+      <input type="password" placeholder="password" required />
+
+      <button>LOGIN</button>
+
+      <div class="not-register">
+        <p>Not registered? <a href="#">Create an account</a></p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Assignment</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 100vh;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .login-container {
+      background-color: #2f2f2f;
+      padding: 40px 55px;
+      border-radius: 8px;
+      width: 50%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 95%;
+      padding: 12px 12px 12px 30px;
+      margin-bottom: 20px;
+      color: #333;
+      margin-left: 5px;
+    }
+    input::placeholder {
+      color: #333;
+      font-size: medium;
+    }
+
+    .info {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-90%);
+      width: 18px;
+      height: 20px;
+      opacity: 1;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 102%;
+      border: none;
+      padding: 12px;
+      background-color: #00a0a0;
+      color: black;
+    }
+    button:hover {
+      background-color: #00a0a0;
+    }
+  </style>
+  <body>
+    <div class="login-container">
+      <form>
+        <div class="info">
+          <img src="./user_profile_icon.png" alt="UserIcon" />
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div class="info">
+          <img src="./padlock.png" alt="passwordIcon" />
+          <input type="password" placeholder="★★★★★★★★★★" required />
+        </div>
+
+        <button type="text">LOGIN</button>
+      </form>
+    </div>
+  </body>
+</html>

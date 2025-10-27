@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.btn1 {
+  background-color: green;
+}
+
+.btn2 {
+  background-color: red;
+}
+
+.login-form input[type="email"] {
+  padding: 12px;
+  width: 300px;
+  background-color: #ccc;
+  border: none;
+}
+
+.login-form .paragraph {
+  color: rgba(0, 0, 255, 1);
+}

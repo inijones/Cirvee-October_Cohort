@@ -1,0 +1,110 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  margin: 10px;
+  width: 50%;
+  padding: 40px;
+}
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  align-items: center;
+}
+
+.pass {
+  position: relative;
+}
+
+.pass img {
+  position: absolute;
+  right: 1px;
+  top: 15%;
+  width: 20px;
+  height: 20px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.button {
+  background-color: darkgray;
+  padding: 15px;
+  width: 110%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.button1,
+.button2 {
+  color: black;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.button :hover {
+  background-color: #999;
+}
+
+.forgotten a {
+  color: #0655e7;
+  text-decoration: none;
+}
+
+.buttons {
+  position: relative;
+}
+
+.buttons img {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.button-f img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 100px;
+  margin-top: 15px;
+}

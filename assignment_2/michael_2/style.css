@@ -1,0 +1,110 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: large;
+  color: rgb(133, 128, 128);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 50%;
+  max-width: 400px;
+  padding: 50px 60px;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  max-width: 380px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 410px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(133, 128, 128);
+  color: white;
+}
+
+p {
+  color: rgb(99, 95, 95);
+}
+
+
+a {
+  color: rgb(37, 115, 189);
+  text-decoration: none;
+}
+.password img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translateY(-90%);
+  top: 33%;
+  right: 70px;
+  opacity: 0.8;
+}
+
+.btn1,
+.btn2 {
+  background-color: white;
+  color: rgb(99, 95, 95);
+  border: 1px solid #ccc;
+}
+.btn1 img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.btn2 img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.hr-text {
+  margin-top: 20px;
+  border: none;
+  position: relative;
+  text-align: center;
+}
+.hr-text::before {
+  background: grey;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
+.hr-text::after {
+  content: attr(data-content);
+  position: relative;
+  background: whitesmoke;
+  padding: 0 30px;
+  color: rgb(99, 95, 95);
+}

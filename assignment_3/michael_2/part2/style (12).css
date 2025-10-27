@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./fonts/Urbanist-VariableFont_wght.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist';
+}
+body {
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+/* section layout styles */
+.smart-section {
+    max-width: 600px;
+    margin: 0n auto;
+    padding: 50px 20px;
+    
+}
+.smart-header {
+    margin-bottom: 50px;
+
+    
+}
+.tag-container {
+    font-size: 0.9rem;
+    color: #007b55;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 1px solid #007b55;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+h1 {
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+}
+.subtitle {
+    color: #555;
+    margin-bottom: 0 auto 50px;
+    max-width: 600px;
+}
+/* Grid layout styles */
+.payment-grid {
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    gap:24px;
+}
+
+
+/* card styles */
+.payment-card {
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 16px;
+    transform: transfrom 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ccc ;
+    text-align: center;
+    display: flex;
+
+
+}
+
+    
+.payment-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.payment-card img{
+   height: 40px;
+   width: 40px;
+   
+   
+   
+
+}
+.payment-card h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #111;
+    line-height: 1.2;
+    display: flex;
+    text-align: left;
+    margin-left: 10px;
+
+
+}
+button {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 60px;
+    background-color: #007b55;
+    color: #fff;
+    border: none;
+
+}
+
+
