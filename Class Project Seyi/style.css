@@ -1,0 +1,122 @@
+   @font-face {
+        font-family: "Urbanist";
+        src: url("./fonts/Urbanist-VariableFont_wght.ttf");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Urbanist", sans-serif;
+      }
+
+      body {
+        background-color: #fff;
+        color: #222;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .tag-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      .testimonial {
+        color: #007b55;
+        font-weight: 600;
+        border: 1px solid #007b55;
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin: 0; /* removed extra margin */
+      }
+
+      .header h1 {
+        font-size: 3.5rem;
+        color: #111;
+        margin: 16px 0;
+      }
+
+      .subtitle {
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 50px;
+      }
+
+      .names {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .marque-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: max-content;
+        animation: scroll-left 25s linear infinite;
+      }
+
+      .marque-wrapper.reverse {
+        animation: scroll-right 25s linear infinite;
+      }
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes scroll-right {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      .customer {
+        width: 350px;
+        background-color: #f2f5f7;
+        padding: 10px 20px;
+        border-radius: 20px;
+        flex-shrink: 0;
+      }
+
+      .customer h6 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .customer p {
+        color: #8c8c8c;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .word {
+        width: 100%;
+        color: #111;
+        text-align: start;
+        margin-top: 8px;
+      }
+
+      .customer img {
+        display: inline-block;
+        margin-top: 10px;
+      }

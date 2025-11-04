@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("./fonts/Urbanist-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;
+  width: 48px;
+}
+
+.logo h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.sign-in {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.register {
+  background-color: #1d9b5e;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero {
+  height: 80vh;
+  width: 100%;
+  background: url("./images/Hero Section.png") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding-top: 80px;
+}
