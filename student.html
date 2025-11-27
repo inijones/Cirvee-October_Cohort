@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f5f5f5;
+      }
+
+      .student-card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 20px 4px 20px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        width: 320px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .student-card:hover {
+        transform: scale(1.4);
+      }
+
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #007bff;
+      }
+
+      h2 {
+        margin: 10px 0 5px;
+        color: #333;
+      }
+
+      .info {
+        font-size: 1rem;
+        color: #555;
+        margin: 6px 0;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="student-card">
+      <img
+        id="student-photo"
+        class="profile-photo"
+        src=""
+        alt="Student Photo"
+      />
+      <h2 id="student-name"></h2>
+
+      <div class="info">
+        <span class="label">Age: </span><span id="student-age"></span>
+      </div>
+      <div class="info">
+        <span class="label">Gender: </span><span id="student-gender"></span>
+      </div>
+      <div class="info">
+        <span class="label">Date of Birth: </span><span id="student-dob"></span>
+      </div>
+    </div>
+
+    <script>
+      const student = {
+        name: "Ini Jones",
+        age: 27,
+        gender: "Male",
+        dob: "22-09-1998",
+        profilePhoto: "https://randomuser.me/api/portraits/women/16.jpg",
+      };
+
+      document.getElementById("student-photo").src = student.profilePhoto;
+      document.getElementById("student-name").textContent = student.name;
+      document.getElementById("student-age").textContent = student.age;
+      document.getElementById("student-gender").textContent = student.gender;
+      document.getElementById("student-dob").textContent = student.dob;
+    </script>
+  </body>
+</html>

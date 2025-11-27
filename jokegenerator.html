@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Joke Generator</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #f0f4f8;
+        padding: 40px;
+      }
+      .box {
+        background: white;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      button {
+        padding: 10px 14px;
+        border: 0;
+        background: #4f46e5;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.6;
+      }
+      .joke {
+        margin: 20px 0;
+        font-size: 1.1rem;
+      }
+      .error {
+        color: red;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Joke Generator</h2>
+      <p class="joke" id="joke">Press the button to load a joke!</p>
+      <button id="btn">Get Joke</button>
+      <p id="error" class="error" style="display: none"></p>
+    </div>
+
+    <script>
+      const jokeEl = document.getElementById("joke");
+      const btn = document.getElementById("btn");
+      const errEl = document.getElementById("error");
+
+      // Simple fallback jokes
+      const fallback = [
+        "Why do programmers hate nature? Too many bugs!",
+        "Why did the function break up with the variable? It needed space.",
+        "Why was the computer cold? It forgot to close its Windows.",
+      ];
+
+      const API = "https://official-joke-api.appspot.com/random_joke";
+
+      async function getJoke() {
+        try {
+          const response = await fetch(API);
+
+          if (!response.ok) {
+            throw new Error("Network response was not OK");
+          }
+
+          const data = await response.json();
+          return `${data.setup} ${data.punchline}`;
+        } catch (error) {
+          const random = fallback[Math.floor(Math.random() * fallback.length)];
+          errEl.style.display = "block";
+          errEl.textContent = "Using fallback joke due to an error.";
+          return random;
+        }
+      }
+
+      async function updateJoke() {
+        btn.disabled = true;
+        btn.textContent = "Loading...";
+        errEl.style.display = "none";
+
+        const joke = await getJoke();
+        jokeEl.textContent = joke;
+
+        btn.disabled = false;
+        btn.textContent = "Get Joke";
+      }
+
+      btn.addEventListener("click", updateJoke);
+    </script>
+  </body>
+</html>
+
+<!-- Short Note on async/await and try/catch
+async/await
+
+
+async makes a function return a promise.
+
+
+await pauses the code until something finishes (like a fetch request).
+
+
+It makes asynchronous code look clean and easy to read—almost like normal step-by-step code.
+
+
+try/catch
+
+
+try is where you put code that might fail (like a network request).
+
+
+catch runs only if something goes wrong—letting you handle errors gently instead of crashing your script.
+
+
+It pairs perfectly with async/await because await can throw errors when promises fail.
+
+
+Let me know if you want an even simpler explanation or a visual diagram! -->

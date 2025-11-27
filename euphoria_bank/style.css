@@ -1,0 +1,1281 @@
+@font-face {
+    font-family: 'urbanist';
+    src: url(./fonts/Urbanist-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'urbanist';
+}
+
+body {
+    background-color: white;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/*Nav Bar styling*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8px;
+    top: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 48px;
+    width: 48px;
+}
+.logo h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500px;
+}
+
+/*Button Style*/
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+.sign-in {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.register {
+    background-color: #1D9B5E;
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.hero {
+   /*height: 80vh;*/
+    width: 100%;
+    display: flex;
+    background: url(./images/hero.jpeg) no-repeat center center/cover;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding-top: 90px;
+}
+
+/*hero 1 section: assignment giving to us*/
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-line {
+    display: flex;
+    flex-direction: row;
+    background-color: #28383e;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    border: 0.6px solid #222;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    
+}
+.button111 {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #D2F801;
+    font-weight: 600;
+}
+.button-line p {
+    color: white;
+}
+
+.hero1 h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+}
+.hero1 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    word-spacing: 5px;
+    letter-spacing: 2.5px;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.last1  {
+    background-color: #1D9B5E;
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.last1 img {
+    padding-left: 5px;
+    align-self: center;
+}
+.last2 {
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.last2 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.last2 img {
+    height: 30px;
+    width: 30px;
+}
+/*hero 1 section: Extra-assignment giving to us*/
+.hero2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.hero2-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+/*Section Layout Style*/
+.features-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tag-container {
+    font-size: 0.8rem;
+    color: #007b55;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 1px solid #007b55;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+}
+.subtitle {
+    color: #555;
+    margin-bottom: 0 auto 50px;
+    max-width: 600px;
+    
+}
+.features-header {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Grid Layout Styles*/
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/*Our Card Style*/
+.features-card {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 25px 20px;
+    border: 1px solid #ccc;
+    transform: tranform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-card img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.features-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.features-card p {
+    color: #555;
+    font-size: 0.7rem;
+
+}
+
+/*this is my class work*/
+
+.full-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.div1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ccc;
+  border-radius: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+}
+.div1 h1 {
+    font-size: 45px;
+    color: #000;
+}
+.div1 p {
+    font-size: 14px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*second diiv*/
+.div2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: green;
+  border-radius: 20px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+.div2 h1 {
+    font-size: 45px;
+    color: white;
+}
+.div2 p {
+    font-size: 14px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: white
+}
+
+/*This is the Assignment Section*/
+.assignment {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+.assignment h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 600;
+}
+.assignment p {
+    font-size: 18px;
+}
+.second img {
+    border-radius: 32px;
+    height: 600px;
+    width: 600px;
+}
+.tag-container1 {
+    font-size: 0.8rem;
+    color: #007b55;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 1px solid #007b55;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.word {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.tick {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+}
+.tick img {
+    width: 20px;
+    height: 20px;
+}
+
+.button001 {
+    background-color: #1D9B5E;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 15px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-img {
+    padding-left: 5px;
+    padding-bottom: -30px;
+}
+
+
+/*second Assignment on the same project*/
+
+.four {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.four1 {
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.four1 img {
+    height: 48px;
+    width: 48px;
+}
+.four1 p {
+    font-size: 14px;
+}
+.second1 img {
+    border-radius: 32px;
+    height: 600px;
+    width: 600px;
+    margin-left: 50px;
+}
+
+/*Another Classword 10/30/2025*/
+.class1 {
+    margin-bottom: 50px;
+}
+.another {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.another h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+}
+.another p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+}
+.testi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    border: none;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 20px;
+}
+.box1 h3 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+.p1 {
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+.box1 p {
+    font-size: 18px;
+    font-weight:500;
+}
+
+.call {
+    align-items: center;
+    justify-content: center;
+}
+
+.calldiv {
+    background: url(./images/hero.jpeg) no-repeat center center/cover;
+    height: 700px;
+    width: 92%;
+    padding: 50px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    gap: 15px;
+}
+.calldiv h4 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 8px;
+}
+.big h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+}
+.big p {
+    color: white;
+    text-align: center;
+}
+
+.btnm img {
+    height: 10px;
+    width: 10px;
+}
+.btnm {
+    background-color: #1D9B5E;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+/*Another assignment 08/11/2025*/
+
+.brand {
+    width: 100%;
+}
+
+.mybrand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.mybrand h2 {
+    font-size: 40px;
+    word-spacing: 3px;
+    padding: 20px;
+}
+.mybrand p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.brandline {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.mainbrand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/*second assignment 08/11/2025*/
+
+.color {
+    background: url(./images/hero.jpeg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.roundp {
+    font-size: 16px;
+    border: 1px solid #1D9B5E;
+    color: #007b55;
+    display: inline-block;
+    padding: 4px 12px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.color-div h2 {
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+    word-spacing: 4px;
+    padding: 20px;
+    line-height: 50px;
+    color: white;
+}
+.ppp {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    word-spacing: 3px;
+}
+
+.pricing-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-div1 {
+    background-color: #24362f;
+    border: 1px solid rgb(65, 60, 60);
+    border-radius: 25px;
+    padding: 20px;
+}
+.pricing-div1 h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.myp {
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.h1p {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.oop {
+    color: white;
+    font-size: 25px;
+}
+.h1p p {
+    font-size: 12px;
+    color: white;
+}
+
+.pricing-div2 {
+    background-color: #243839;
+    border: #222;
+    border-radius: 25px;
+    padding: 20px 10px;
+}
+
+.first-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.first-div img {
+    height: 18px;
+    width: 18px;
+}
+.first-div p {
+    font-size: 13px;
+    color: white;
+}
+.firstpb {
+    background-color: #007b55;
+    padding: 8px 15px;
+    color: white;
+    border: 1px solid #222;
+    border-radius: 50px;
+    display: inline-block;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(to right, #1a1a1a, #24362f);
+    color: white;
+    padding: 60px 40px 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-company {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    height: 48px;
+    width: 48px;
+}
+
+.footer-logo h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.social-icon:hover {
+    background-color: #333;
+}
+
+.icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-placeholder img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+.footer-download {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.app-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2a2a2a;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.app-button:hover {
+    background-color: #333;
+}
+
+.app-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.app-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.app-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: white;
+}
+
+/* Responsive Styles */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .hero1 h1 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .assignment {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .second img,
+    .second1 img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    }
+    
+    .pricing-div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .pricing-div1 {
+        width: 100%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .buttons {
+        gap: 5px;
+    }
+    
+    .sign-in,
+    .register {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+    
+    .hero1 h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .hero1 p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .last {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .last1,
+    .last2 {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero2 {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .hero2 img {
+        width: 100%;
+        max-width: 150px;
+    }
+    
+    /* Features Section */
+    .features-section {
+        padding: 40px 20px;
+    }
+    
+    .features-header h1 {
+        font-size: 28px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Stats Section */
+    .full-row {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .div1,
+    .div2 {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    
+    .div1 h1,
+    .div2 h1 {
+        font-size: 36px;
+    }
+    
+    /* Brand Section */
+    .mybrand h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .brandline {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    /* Pricing Section */
+    .color {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .color-div h2 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    
+    .ppp {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .pricing-div {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* Assignment Sections */
+    .assignment {
+        flex-direction: column;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
+    
+    .assignment h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .assignment p {
+        font-size: 14px;
+    }
+    
+    .word {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .tag-container1 {
+        margin-left: 20px;
+    }
+    
+    .tick {
+        margin-left: 20px;
+    }
+    
+    .button001 {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .second img,
+    .second1 img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+    .four {
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 10px;
+    }
+    
+    .four1 {
+        width: 100%;
+    }
+    
+    /* Testimonials */
+    .another h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .another p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    
+    .testi {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 15px;
+    }
+    
+    .box1 {
+        width: 100%;
+    }
+    
+    /* Call to Action */
+    .calldiv {
+        width: 100%;
+        margin: 20px 0;
+        padding: 30px 20px;
+        height: auto;
+    }
+    
+    .calldiv h4 {
+        font-size: 14px;
+    }
+    
+    .big h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .big p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 40px 20px 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .hero1 h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .features-header h1 {
+        font-size: 24px;
+    }
+    
+    .assignment h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .another h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .big h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .color-div h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .mybrand h2 {
+        font-size: 24px;
+    }
+    
+    .social-icons {
+        gap: 8px;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .app-button {
+        padding: 10px 12px;
+    }
+}

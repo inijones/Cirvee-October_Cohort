@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica;
+        padding: 20px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: auto;
+      }
+
+      input {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Simple Form</h2>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get the values of the input
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        // Alert our user
+        alert(`Name: ${name} \nEmail: ${email}`);
+
+        // Navigate to the new page (this page can be local or external)
+        window.location.href = "home.html";
+      });
+    </script>
+  </body>
+</html>
