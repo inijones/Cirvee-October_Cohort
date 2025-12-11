@@ -1,0 +1,28 @@
+/* global styles and fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+  --purple: #6d57ff;
+  --card-bg: #ffffff;
+  --muted: #9aa0a6;
+  --input-bg: #eceff3;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--purple);
+  padding: 32px;
+}

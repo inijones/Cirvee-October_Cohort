@@ -1,0 +1,17 @@
+.input-field {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 18px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #e8eaee;
+  color: #555;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #9aa0a6;
+}
