@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "poppins";
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  font-family: "poppins";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  font-family: "poppins";
+}
+.navbar {
+  height: 10vh;
+  background-color: #263640;
+  position: fixed;
+  width: 100%;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+h1 {
+  margin-top: 20px;
+  margin-left: 15px;
+  color: white;
+  gap: 2px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 70px;
+  vertical-align: center;
+}
+.words {
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+  margin-top: 25px;
+  gap: 20px;
+  color: white;
+}
+.get {
+  position: absolute;
+  margin-left: 1300px;
+  width: 200px;
+  padding: 15px;
+  top: 10%;
+  margin-top: 5px;
+  background-color: #7591a3;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+.hero {
+  background: url(./image/hero_bg.svg) no-repeat center center/cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "inter";
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.Services {
+  width: 600px;
+  font-family: "inter";
+  margin-left: 60px;
+  position: absolute;
+}
+.Services h1 {
+  margin-top: 200px;
+  font-size: 3rem;
+  color: #263640;
+}
+.Services h3 {
+  color: #7591a4;
+  margin-top: 20px;
+  width: 420px;
+  line-height: 28px;
+  margin-left: 30px;
+}
+
+.seventeen {
+  font-weight: bold;
+  color: #263640;
+}
+.explore {
+  height: 500px;
+  position: relative;
+}
+
+.btn {
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #263640;
+  margin-top: 120px;
+  color: white;
+  font-size: large;
+  margin-left: 80px;
+}
+.play {
+  width: 40px;
+  height: 40px;
+  vertical-align: center;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+.divider {
+  position: absolute;
+  width: 100px;
+  top: 60%;
+  left: 18%;
+}
+.exp {
+  position: absolute;
+  left: 30%;
+  top: 76%;
+}
+.user1 {
+  padding: 10px;
+  width: 170px;
+  background-color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 5px;
+  z-index: 10;
+}
+.useri {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  vertical-align: center;
+}
+.johns {
+  position: absolute;
+  left: 70px;
+  top: 5px;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.stars {
+  width: 70px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  display: block;
+}
+.user2 {
+  padding: 8px;
+  width: 170px;
+  background-color: white;
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  border-radius: 5px;
+  z-index: 10;
+}
+.userii {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  vertical-align: center;
+}
+.may {
+  position: absolute;
+  left: 70px;
+  top: 5px;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.starss {
+  width: 70px;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  display: block;
+}
+.hero2 {
+  display: flex;
+  margin-top: 100px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .words {
+    margin-left: 0;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .words h3 {
+    font-size: 0.9rem;
+  }
+
+  .get {
+    position: relative;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 150px;
+    align-self: center;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  .Services {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+  }
+
+  .Services h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Services h3 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .explore {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 180px;
+  }
+
+  .play {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 15px 0;
+  }
+
+  .divider {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 10px 0;
+  }
+
+  .exp {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 10px 0;
+  }
+
+  .user1 {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 20px auto;
+    width: 150px;
+  }
+
+  .user2 {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 20px auto;
+    width: 150px;
+  }
+
+  img {
+    margin-left: 20px;
+  }
+
+  h1 {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Services h1 {
+    font-size: 1.5rem;
+  }
+
+  .Services h3 {
+    font-size: 0.85rem;
+    line-height: 24px;
+  }
+
+  .user1,
+  .user2 {
+    width: 140px;
+    padding: 8px;
+  }
+
+  .johns,
+  .may {
+    font-size: 0.8rem;
+    left: 60px;
+  }
+
+  .useri,
+  .userii {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stars,
+  .starss {
+    width: 60px;
+    height: 18px;
+  }
+}

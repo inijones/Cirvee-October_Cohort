@@ -393,3 +393,4 @@ console.log(person1.name);
 console.log(person1.age);
 person1.greet();
 
+console.log(Math.floor(Math.random() * 3));

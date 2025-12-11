@@ -52,12 +52,38 @@
 
       async function getJoke() {
         try {
-            const response = await fetch(API);
+          const response = await fetch(API);
 
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+
+          const data = await response.json();
+          return `Setup: ${data.setup} - Punchline:${data.punchline}`;
         } catch (error) {
+          const random = fallback[Math.floor(Math.random() * fallback.length)];
 
+          errEl.style.display = "block";
+
+          errEl.textContent = "Using fallback joke due to an error.";
+
+          return random;
         }
       }
+
+      async function updateJoke() {
+        btn.disabled = true;
+        btn.textContent = "Loading...";
+        errEl.style.display = "none";
+
+        const joke = await getJoke();
+        jokeEl.textContent = joke;
+
+        btn.disabled = false;
+        btn.textContent = "Get Joke";
+      }
+
+      btn.addEventListener("click", updateJoke);
     </script>
   </body>
 </html>
